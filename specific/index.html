@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <script src="../dist/popper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../dist/css/bootstrap.min.css"
+    />
+    <script src="../dist/bootstrap.min.js"></script>
+    <script src="./specific.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/86fb0fb587.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../profile/index.html">ConnectWave</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ol class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a href="/profile" class="nav-link active">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="/feed/" class="nav-link active">Feed</a>
+           </li>
+            
+          </ol>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 border-black"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container posts-content">
+      <div class="row justify-content-center align-items-center">
+          <div class="scale w-auto">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <a class="profilelink"><div class="media mb-3">
+
+                    <img src="./image/Anon.png" class="profileimg d-block ui-w-40 rounded-circle" alt="">
+
+                    <div class="author media-body ml-3">
+                      Kenneth Frazier
+                      <div class="text-muted small">3 days ago</div>
+                    </div>
+                  </div></a>
+                  <h2 class="title"></h2>
+                  <p class="body">
+                    
+                  </p>
+                  <ul class="tagsList"></ul>
+                  <a class="image ui-rect ui-bg-cover"></a>
+                  
+                </div>
+                <div class="card-footer">
+                  <p  class="d-inline-block text-muted">
+                      <strong class="showreactions"></strong> <small class="align-middle">Reactions</small>
+                  </p>
+                  <p  class="d-inline-block text-muted ml-3">
+                      <strong class="comments"></strong> <small class="align-middle">Comments</small>
+                  </p>
+                  <button class="react1 btn btn-primary ms-5">
+                    🔥
+                  </button>
+                  <button class="react2 btn btn-primary">
+                    ❤️
+                  </button>
+                  <button class="react3 btn btn-primary">
+                    👍
+                  </button>
+                  
+                </div>
+                <div class="card-footer commentsection d-flex">
+                  <p class="d-inline-block text-muted ml-3 mt-2 mx-2">Write a comment:</p>
+                  <input type="text" placeholder="Your comment" id="commentinput" class="d-inline-block form-control w-75 ml-3">
+                  <button class="commentbtn btn btn-primary">Post</button>
+
+                </div>
+              </div>
+          </div>
+          
+    
+    
+    
+    </body>
+    </html>

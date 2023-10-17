@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../dist/css/main.css" />
+
+    <script src="../dist/popper.min.js"></script>
+    <script src="../dist/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../dist/css/bootstrap.min.css"
+    />
+
+    <script src="./profile.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/86fb0fb587.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../profile/index.html">ConnectWave</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/profile" class="nav-link active">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="/feed/" class="nav-link active">Feed</a>
+            </li>
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link active">Log Out</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 border-black"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

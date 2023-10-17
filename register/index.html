@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <script src="../dist/popper.min.js"></script>
+
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <script src="../dist/bootstrap.min.js"></script>
+
+    <script src="../js/script.js" defer type="module"></script>
+    <script src="https://kit.fontawesome.com/86fb0fb587.js" crossorigin="anonymous"></script>
+    <script src="./js/register.js" defer type="module"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">ConnectWave</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                 <a href="/profile" class="nav-link active">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="/feed/" class="nav-link active">Feed</a>
+             </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 border-black" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-4 d-flex justify-content-center align-items-center border-1 min-vh-100">
+        <form method="get" class="was-validated p-5" id="form">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label for="uname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" minlength="8" name="uname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter username" name="uname" required>
+              <div id="valid" class="valid-feedback">Valid.</div>
+              <div id="invalid" class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label for="pwd" class="form-label">Password:</label>
+                <input id="password-input" type="password" class="form-control" placeholder="Enter password" name="pswd" minlength="8" required>
+                <div class="invalid-feedback">Invalid</div>
+            </div>
+            <div
+            class="alert px-4 py-3 mb-0 d-none"
+            role="alert"
+            data-mdb-color="warning"
+            id="password-alert"
+            >
+            <ul class="list-unstyled mb-0">
+              <li class="requirements leng">
+                <i class="fas fa-check text-success me-2"></i>
+                <i class="fas fa-times text-danger me-3"></i>
+                Your password must have at least 8 chars</li>
+              <li class="requirements big-letter">
+                <i class="fas fa-check text-success me-2"></i>
+                <i class="fas fa-times text-danger me-3"></i>
+                Your password must have at least 1 big letter.</li>
+              <li class="requirements num">
+                <i class="fas fa-check text-success me-2"></i>
+                <i class="fas fa-times text-danger me-3"></i>
+                Your password must have at least 1 number.</li>
+              <li class="requirements special-char">
+                <i class="fas fa-check text-success me-2"></i>
+                <i class="fas fa-times text-danger me-3"></i>
+                Your password must have at least 1 special char.</li>
+            </ul>
+          </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" id="submit" class="btn btn-primary btn-block mb-4">Register</button>
+          
+            <!-- Register buttons -->
+          </form>
+      </div>
+    
+</body>
+</html>
